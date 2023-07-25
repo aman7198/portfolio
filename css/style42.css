@@ -1,0 +1,229 @@
+@font-face {
+font-family: "RobotoBlack";
+src: url(../assests/fonts/Roboto-Black.ttf);
+
+}
+@font-face {
+    font-family: "RobotoMed";
+    src: url(../assests/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../assests/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "RobotoReg";
+    src: url(../assests/fonts/Roboto-Regular.ttf);
+}
+
+
+
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-image: url(https://as2.ftcdn.net/v2/jpg/05/08/85/65/1000_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg);}
+
+
+.flex {display: flex;}
+
+.justify-even {justify-content: space-evenly;}
+
+.justify-btwn {justify-content: space-between;}
+
+.justify-arnd {justify-content: space-around;}
+
+.align-cntr {align-items: center;}
+
+* {text-decoration: none;
+color: black;
+font-weight: bold;}
+
+.container {padding: 5%;}
+
+
+
+header {
+    padding: 2vw 0;
+    
+    border-radius: 10px;
+
+
+
+}
+
+
+#project img {width: 500px;
+    padding: 4rem;
+}
+
+#project h1 {color: red;
+font-size: xx-large;}
+
+
+
+
+
+.brandLogo span {color: rgb(89, 0, 255);}
+
+header nav a {margin-right: 1rem;
+    
+padding: 1vw;
+font-size: 2vw;}
+
+.leftpart button {color: black;
+border: 5px solid brown;
+border-radius: 1rem;}
+
+header nav a:hover {margin-right: 1rem;
+background-color: cyan;}
+
+header nav a.active {border-bottom: 2px solid black;}
+
+.hero {width: 100%;
+padding: 0vw 4vw;}
+
+.rightpart img {width: 30%;
+float: right;
+border: 5px solid rgb(8, 202, 216);
+border-radius: 100%;
+position: relative;
+top: 30px;}
+
+.title {font-size: 1.8rem;
+margin-bottom: 1.5vw;}
+
+
+.about {display: flex;
+flex-direction: column;}
+
+#skill h1 {color: rgb(4, 0, 255);
+    width: 100px;
+padding-bottom: 50px;
+padding-top: 25px;}
+
+.skills {display: flex;}
+
+#contact h1 {color: rgb(100, 32, 0);
+font-style: italic;
+font-weight: 600;
+font-size: xx-large;
+
+}
+
+
+
+.skills .skill-item {width: 150px;
+height: 100px;
+}
+
+
+button {padding: 3% 3%;
+background-color: rgb(11, 142, 142);
+border: none;
+outline: none;
+color: white;
+font-family: 'RobotoBlack';
+font-weight: 800;
+border-radius: 0.3rem;
+margin-right: 1%;
+}
+
+.work {padding: 2vw 3vw;}
+
+.work h2 {margin-bottom: 1.2vw;}
+
+.leftpart .desc {
+    font-family: "RobotoReg";
+    font-style: italic;
+}
+    
+h1 {margin: auto;
+width: 10px;}
+ 
+
+footer#contact {text-align: center;}
+
+
+footer#contact h1 {
+    padding: 2rem 0rem;
+font-family: "RobotoBold";}
+
+footer#contact p {padding-bottom: 2rem;
+font-family: "RobotoReg";
+font-size: 100%;
+font-weight: lighter;} 
+
+footer#contact .social-icons {padding: 1.2rem;}
+
+footer#contact .social-icons 
+img.git {width: 3rem;
+margin-right: 10px;}
+
+footer#contact .social-icons
+img.link {width: 3rem;}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .rightpart img {
+      width: 60%;
+      margin-top: 20px;
+    }
+  
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    header nav {
+      margin-top: 1rem;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    header nav a {
+      margin-right: 1rem;
+      padding: 1vw;
+      font-size: 4vw;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5vw;
+      text-align: center;
+    }
+  
+    .desc {
+      font-size: 90%;
+    }
+  
+    .skills {
+      flex-wrap: wrap;
+    }
+  
+    .skills .skill-item {
+      width: 100px;
+      height: 80px;
+      margin: 10px;
+    }
+  
+    #contact h1 {
+      font-size: x-large;
+    }
+  
+    footer#contact .social-icons img {
+      width: 2.5rem;
+    }
+  }
